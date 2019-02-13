@@ -1,0 +1,10 @@
+PROCEDURE alt_custom_rule(active Boolean)
+
+// get the rule object
+var theRule = select exactly one from system.rules as rules WHERE name == "onHeartBeatPer5Seconds"
+
+var rName = theRule.name
+var rVer = theRule.version
+var fullRuleName = rName + (rVer ? ":" + rVer : "")
+
+ALTER RULE @fullRuleName WITH active = active

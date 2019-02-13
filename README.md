@@ -1,0 +1,1 @@
+This is a Vantiq sample project showing how to turn on/off a rule dynamically

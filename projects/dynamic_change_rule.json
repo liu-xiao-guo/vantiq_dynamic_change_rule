@@ -1,0 +1,228 @@
+{
+  "links" : [ {
+    "source" : "type/system.rules",
+    "target" : "procedure/alt_custom_rule"
+  }, {
+    "source" : "scheduledevent/heatbeat",
+    "target" : "topic//xiaoguo/heartbeat_per_5sec"
+  }, {
+    "source" : "topic//xiaoguo/heartbeat_per_5sec",
+    "target" : "rule/onHeartBeatPer5Seconds"
+  }, {
+    "source" : "rule/onHeartBeatPer5Seconds",
+    "target" : "topic//xiaoguo/heartbeat_5"
+  } ],
+  "name" : "dynamic_change_rule",
+  "options" : {
+    "description" : "",
+    "dockCollapsed" : true,
+    "dockSort" : 1,
+    "filterBitArray" : "ffffffffffffffffffffffffffffffff",
+    "isModeloProject" : true,
+    "layoutStyle" : "tile",
+    "showGrid" : true,
+    "tileColumns" : 2,
+    "tileRows" : 2,
+    "v" : 2
+  },
+  "resources" : [ {
+    "label" : "/xiaoguo/heartbeat",
+    "name" : "/xiaoguo/heartbeat",
+    "node" : {
+      "x" : 349.13020835351927,
+      "y" : 152.31012467969737
+    },
+    "type" : 10
+  }, {
+    "label" : "/xiaoguo/heartbeat_5",
+    "name" : "/xiaoguo/heartbeat_5",
+    "node" : {
+      "x" : 130.16179449560923,
+      "y" : 166.5437367898501
+    },
+    "type" : 10
+  }, {
+    "label" : "/xiaoguo/heartbeat_per_5sec",
+    "name" : "/xiaoguo/heartbeat_per_5sec",
+    "node" : {
+      "x" : 281.65270170029595,
+      "y" : 229.94242889395625
+    },
+    "type" : 10
+  }, {
+    "inventory" : {
+      "appmodelHash" : [ ],
+      "appmodels" : [ ],
+      "collaborationHash" : [ ],
+      "collaborations" : [ ],
+      "pagesetHash" : [ ],
+      "pagesets" : [ ],
+      "procedureHash" : [ ],
+      "procedures" : [ ],
+      "sourceHash" : [ ],
+      "sources" : [ ],
+      "topicHash" : [ ],
+      "topics" : [ ],
+      "typeHash" : [ "in" ],
+      "types" : [ "system.rules" ]
+    },
+    "label" : "alt_custom_rule",
+    "name" : "alt_custom_rule",
+    "node" : {
+      "x" : 344.4586914733517,
+      "y" : 88.01268549125432
+    },
+    "timestamp" : "2019-02-13T03:19:02.221Z",
+    "type" : 3
+  }, {
+    "inventory" : {
+      "appmodelHash" : [ ],
+      "appmodels" : [ ],
+      "collaborationHash" : [ ],
+      "collaborations" : [ ],
+      "pagesetHash" : [ ],
+      "pagesets" : [ ],
+      "procedureHash" : [ ],
+      "procedures" : [ ],
+      "sourceHash" : [ ],
+      "sources" : [ ],
+      "topicHash" : [ "out" ],
+      "topics" : [ "/xiaoguo/heartbeat_per_5sec" ],
+      "typeHash" : [ ],
+      "types" : [ ]
+    },
+    "label" : "heatbeat",
+    "name" : "heatbeat",
+    "node" : {
+      "x" : 477.8131089151982,
+      "y" : 51.45426154055153
+    },
+    "timestamp" : "2019-02-13T02:56:43.217Z",
+    "type" : 17
+  }, {
+    "inventory" : {
+      "appmodelHash" : [ ],
+      "appmodels" : [ ],
+      "collaborationHash" : [ ],
+      "collaborations" : [ ],
+      "pagesetHash" : [ ],
+      "pagesets" : [ ],
+      "procedureHash" : [ ],
+      "procedures" : [ ],
+      "sourceHash" : [ ],
+      "sources" : [ ],
+      "topicHash" : [ "in", "out" ],
+      "topics" : [ "/xiaoguo/heartbeat_per_5sec", "/xiaoguo/heartbeat_5" ],
+      "typeHash" : [ ],
+      "types" : [ ]
+    },
+    "label" : "onHeartBeatPer5Seconds",
+    "name" : "onHeartBeatPer5Seconds",
+    "node" : {
+      "x" : 356.1525593562104,
+      "y" : -16.97582877234693
+    },
+    "timestamp" : "2019-02-13T03:16:50.058Z",
+    "type" : 2
+  }, {
+    "label" : "system.rules",
+    "name" : "system.rules",
+    "node" : {
+      "x" : 533.6738552020042,
+      "y" : 154.96103418633805
+    },
+    "timestamp" : "2017-08-31T19:49:11.882Z",
+    "type" : 1
+  } ],
+  "tools" : [ {
+    "isPinned" : true,
+    "name" : "Project Resource Graph",
+    "pane" : {
+      "c" : 1,
+      "lastUsed" : 1550027481040,
+      "r" : 0
+    },
+    "toolOptions" : {
+      "scaleAndTranslationState" : {
+        "lastZoomRequest" : 0,
+        "scale" : 0.7320428479728126,
+        "translate" : [ 9.03789081750449, 90.07942724581342 ]
+      }
+    },
+    "type" : 1
+  }, {
+    "isPinned" : false,
+    "name" : "heatbeat",
+    "pane" : {
+      "c" : -1,
+      "lastUsed" : 1550027511052,
+      "r" : -1
+    },
+    "resourceKey" : "scheduledevent/heatbeat",
+    "type" : 21
+  }, {
+    "isPinned" : false,
+    "name" : "alt_custom_rule",
+    "pane" : {
+      "c" : 0,
+      "lastUsed" : 1550027969010,
+      "r" : 0
+    },
+    "resourceKey" : "procedure/alt_custom_rule",
+    "type" : 24
+  }, {
+    "isPinned" : false,
+    "name" : "onHeartBeatPer5Seconds",
+    "pane" : {
+      "c" : -1,
+      "lastUsed" : 1550027932726,
+      "r" : -1
+    },
+    "resourceKey" : "rule/onHeartBeatPer5Seconds",
+    "type" : 3
+  }, {
+    "isPinned" : false,
+    "name" : "/xiaoguo/heartbeat_per_5sec",
+    "pane" : {
+      "c" : -1,
+      "lastUsed" : 1550027500386,
+      "r" : -1
+    },
+    "resourceKey" : "topic//xiaoguo/heartbeat_per_5sec",
+    "type" : 8
+  }, {
+    "isPinned" : false,
+    "name" : "Autopsies Query",
+    "pane" : {
+      "c" : -1,
+      "lastUsed" : 1550027833271,
+      "r" : -1
+    },
+    "type" : 37
+  }, {
+    "isPinned" : false,
+    "name" : "/xiaoguo/heartbeat_5",
+    "pane" : {
+      "c" : 0,
+      "lastUsed" : 1550027961371,
+      "r" : 1
+    },
+    "resourceKey" : "topic//xiaoguo/heartbeat_5",
+    "type" : 8
+  }, {
+    "isPinned" : false,
+    "name" : "/xiaoguo/heartbeat_5",
+    "pane" : {
+      "c" : 1,
+      "lastUsed" : 1550027961443,
+      "r" : 1
+    },
+    "resourceKey" : "topic//xiaoguo/heartbeat_5",
+    "type" : 11
+  } ],
+  "type" : "dev",
+  "views" : [ {
+    "name" : "Main",
+    "projectToolKeys" : [ "graph/Project Resource Graph", "scheduledeventeditor/heatbeat", "cmeditorprocedure/alt_custom_rule", "cmeditorrule/onHeartBeatPer5Seconds", "subtopiceditor//xiaoguo/heartbeat_per_5sec", "autopsyquery/Autopsies Query", "autopsylist/Autopsies (newest first) @ 11:17:13 AM", "subtopiceditor//xiaoguo/heartbeat_5", "dataviewer//xiaoguo/heartbeat_5" ]
+  } ]
+}

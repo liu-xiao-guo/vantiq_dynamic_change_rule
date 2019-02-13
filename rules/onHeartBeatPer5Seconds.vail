@@ -1,0 +1,9 @@
+RULE onHeartBeatPer5Seconds
+
+WHEN PUBLISH OCCURS ON "/xiaoguo/heartbeat_per_5sec"
+
+var msg= {
+    "a": 3
+}
+
+PUBLISH msg to TOPIC "/xiaoguo/heartbeat_5"
